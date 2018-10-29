@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{675AA4EF-D6CF-41FB-AF33-855C53B7326C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PatternsExamples</RootNamespace>
+    <AssemblyName>PatternsExamples</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavioral\ChainOfResponsibility\Example.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Template.cs" />
+    <Compile Include="Behavioral\Command\Example.cs" />
+    <Compile Include="Behavioral\Command\Template.cs" />
+    <Compile Include="Behavioral\Interpreter\Example.cs" />
+    <Compile Include="Behavioral\Interpreter\Template.cs" />
+    <Compile Include="Behavioral\Iterator\Example.cs" />
+    <Compile Include="Behavioral\Iterator\Template.cs" />
+    <Compile Include="Behavioral\Mediator\Example.cs" />
+    <Compile Include="Behavioral\Mediator\Template.cs" />
+    <Compile Include="Behavioral\Memento\Example.cs" />
+    <Compile Include="Behavioral\Memento\Template.cs" />
+    <Compile Include="Behavioral\Observer\Example.cs" />
+    <Compile Include="Behavioral\Observer\Template.cs" />
+    <Compile Include="Behavioral\State\Example.cs" />
+    <Compile Include="Behavioral\State\Template.cs" />
+    <Compile Include="Behavioral\Strategy\Example.cs" />
+    <Compile Include="Behavioral\Strategy\Template.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Example.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Template.cs" />
+    <Compile Include="Behavioral\Visitor\Example.cs" />
+    <Compile Include="Behavioral\Visitor\Template.cs" />
+    <Compile Include="Creational\AbstractFactory\Example.cs" />
+    <Compile Include="Creational\AbstractFactory\Template.cs" />
+    <Compile Include="Creational\Builder\Example.cs" />
+    <Compile Include="Creational\Builder\Template.cs" />
+    <Compile Include="Creational\FactoryMethod\Example.cs" />
+    <Compile Include="Creational\FactoryMethod\Template.cs" />
+    <Compile Include="Creational\Prototype\Example.cs" />
+    <Compile Include="Creational\Prototype\Template.cs" />
+    <Compile Include="Creational\Singleton\Template.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\Example.cs" />
+    <Compile Include="Structural\Adapter\Template.cs" />
+    <Compile Include="Structural\Bridge\Example.cs" />
+    <Compile Include="Structural\Bridge\Template.cs" />
+    <Compile Include="Structural\Composite\Example.cs" />
+    <Compile Include="Structural\Composite\Template.cs" />
+    <Compile Include="Structural\Decorator\Example.cs" />
+    <Compile Include="Structural\Decorator\Template.cs" />
+    <Compile Include="Structural\Facade\Example.cs" />
+    <Compile Include="Structural\Facade\Template.cs" />
+    <Compile Include="Structural\Flyweight\Example.cs" />
+    <Compile Include="Structural\Flyweight\Template.cs" />
+    <Compile Include="Structural\Proxy\Example.cs" />
+    <Compile Include="Structural\Proxy\Template.cs" />
+    <Compile Include="Temp\Example.cs" />
+    <Compile Include="Temp\Template.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Behavioral\ChainOfResponsibility\About.txt" />
+    <Content Include="Behavioral\ChainOfResponsibility\Scheme.png" />
+    <Content Include="Behavioral\Command\About.txt" />
+    <Content Include="Behavioral\Command\Scheme.png" />
+    <Content Include="Behavioral\Interpreter\About.txt" />
+    <Content Include="Behavioral\Interpreter\Scheme.png" />
+    <Content Include="Behavioral\Iterator\About.txt" />
+    <Content Include="Behavioral\Iterator\Scheme.png" />
+    <Content Include="Behavioral\Mediator\About.txt" />
+    <Content Include="Behavioral\Mediator\Scheme.png" />
+    <Content Include="Behavioral\Memento\About.txt" />
+    <Content Include="Behavioral\Memento\Scheme.png" />
+    <Content Include="Behavioral\Observer\About.txt" />
+    <Content Include="Behavioral\Observer\Scheme.png" />
+    <Content Include="Behavioral\State\About.txt" />
+    <Content Include="Behavioral\State\Scheme.png" />
+    <Content Include="Behavioral\Strategy\About.txt" />
+    <Content Include="Behavioral\Strategy\Scheme.png" />
+    <Content Include="Behavioral\TemplateMethod\About.txt" />
+    <Content Include="Behavioral\TemplateMethod\Scheme.png" />
+    <Content Include="Behavioral\Visitor\About.txt" />
+    <Content Include="Behavioral\Visitor\Scheme.png" />
+    <Content Include="Creational\AbstractFactory\About.txt" />
+    <Content Include="Creational\AbstractFactory\Scheme.png" />
+    <Content Include="Creational\Builder\About.txt" />
+    <Content Include="Creational\Builder\Scheme.png" />
+    <Content Include="Creational\FactoryMethod\About.txt" />
+    <Content Include="Creational\FactoryMethod\Scheme.png" />
+    <Content Include="Creational\Prototype\About.txt" />
+    <Content Include="Creational\Prototype\Scheme.png" />
+    <Content Include="Creational\Singleton\About.txt" />
+    <Content Include="Structural\Adapter\About.txt" />
+    <Content Include="Structural\Adapter\Scheme.png" />
+    <Content Include="Structural\Bridge\About.txt" />
+    <Content Include="Structural\Bridge\Scheme.png" />
+    <Content Include="Structural\Composite\About.txt" />
+    <Content Include="Structural\Composite\Scheme.png" />
+    <Content Include="Structural\Decorator\About.txt" />
+    <Content Include="Structural\Decorator\Scheme.png" />
+    <Content Include="Structural\Facade\About.txt" />
+    <Content Include="Structural\Facade\Scheme.png" />
+    <Content Include="Structural\Flyweight\About.txt" />
+    <Content Include="Structural\Flyweight\Scheme.png" />
+    <Content Include="Structural\Proxy\About.txt" />
+    <Content Include="Structural\Proxy\Scheme.png" />
+    <Content Include="Temp\About.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
